@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Task 1</title>
     <style>
-        .feedback-form label{
+        .feedback-form label {
             display: block;
             padding-top: 10px;
         }
-        .block{
+
+        .block {
             display: block;
         }
-        fieldset{
+
+        fieldset {
             margin-top: 80px;
         }
-        .mt-20{
+
+        .mt-20 {
             margin-top: 20px;
+        }
+
+        .search-field {
+            padding-right: 5px;
+            /* Add space for the icon */
+            position: relative;
+        }
+
+        .search-field::after {
+            content: url('your-icon-url.png');
+            /* Add your icon's URL */
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            /* Ensure clicks go through to the input */
+        }
+
+        .search-field::-webkit-search-cancel-button {
+            display: inline;
+            /* Keep the clear button visible */
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Search Image</h1>
@@ -28,7 +55,7 @@
         <!-- Image Search Form           -->
         <form>
             <label for="search">Search your image here:
-                <input type="search" name="" id="search" placeholder="search image">
+                <input class="search-field" type="search" name="" id="search" placeholder="search image">
             </label>
             <input type="submit" value="Search">
         </form>
@@ -58,4 +85,5 @@
 
     </footer>
 </body>
+
 </html>
