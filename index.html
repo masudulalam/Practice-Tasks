@@ -12,6 +12,9 @@
         .block{
             display: block;
         }
+        fieldset{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -32,19 +35,21 @@
         </figure>
         <a href="https://www.google.com/">For more information click here</a>
         <!-- Feedback Form -->
-        <p>Feedback form:</p>
-        <form class="feedback-form">
-            <label for="name"><span class="block">Name:</span>
-                <input type="text" name="" id="name">
-            </label>
-            <label for="date"><span class="block">Date:</span>
-                <input type="date" name="" id="date">
-            </label>
-            <label for="text"><span class="block">Comment:</span>
-                <textarea cols="50" rows="5" id="text"></textarea>
-            </label>
-            <input type="submit" value="Submit">
-        </form>
+        <fieldset>
+            <legend>Feedback form:</legend>
+            <form class="feedback-form">
+                <label for="name"><span class="block">Name:</span>
+                    <input type="text" name="" id="name">
+                </label>
+                <label for="date"><span class="block">Date:</span>
+                    <input type="date" name="" id="date">
+                </label>
+                <label for="text"><span class="block">Comment:</span>
+                    <textarea cols="50" rows="5" id="text"></textarea>
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </fieldset>
     </main>
     <footer>
 
