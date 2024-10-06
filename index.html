@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Task 1</title>
+    <style>
+        .feedback-form label{
+            display: block;
+            padding-top: 10px;
+        }
+        .block{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
 
     </header>
-    <main>          
+    <main>
+        <!-- Image Search Form           -->
         <form>
             <label for="search">Search your image here:
                 <input type="text" name="" id="search" placeholder="search image">
@@ -21,6 +31,20 @@
             <figcaption>Flower</figcaption>
         </figure>
         <a href="https://www.google.com/">For more information click here</a>
+        <!-- Feedback Form -->
+        <p>Feedback form:</p>
+        <form class="feedback-form">
+            <label for="name"><span class="block">Name:</span>
+                <input type="text" name="" id="name">
+            </label>
+            <label for="date"><span class="block">Date:</span>
+                <input type="date" name="" id="date">
+            </label>
+            <label for="text"><span class="block">Comment:</span>
+                <textarea cols="50" rows="5" id="text"></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer>
 
